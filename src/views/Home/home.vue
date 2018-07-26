@@ -58,13 +58,11 @@ export default {
       size = Number(size.toFixed(2));
       size = size + "MB";
       let temp = {
-        name: currentFile.name,
-        size: size,
-        type: currentFile.type
+        name: currentFile.name, //文件名称
+        size: size, //文件大小
+        type: currentFile.type //文件类型
       };
       vm.fileList.push(temp);
-      console.log("文件格式:" + currentFile.type);
-      console.log("文件大小:" + size);
     },
     deleteFile(index) {
       let vm = this;
